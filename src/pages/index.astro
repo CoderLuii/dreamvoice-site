@@ -411,4 +411,19 @@ import WaitlistForm from '../components/WaitlistForm.astro';
     .dv-hero-content { animation: none; opacity: 1; }
     .dv-wave-path { animation: none; }
   }
+
+  html.landing-boot .dv-hero-waveform,
+  html.landing-boot .dv-bubble-left,
+  html.landing-boot .dv-bubble-right,
+  html.landing-boot .dv-hero-content,
+  html.landing-boot .dv-wave-path {
+    animation-play-state: paused;
+  }
+
+  html.landing-boot .dv-hero-waveform,
+  html.landing-boot .dv-bubble-left,
+  html.landing-boot .dv-bubble-right,
+  html.landing-boot .dv-hero-content {
+    opacity: 0 !important;
+  }
 </style>
