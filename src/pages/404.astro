@@ -1,0 +1,69 @@
+---
+import '../styles/global.css';
+
+const title = '404 - DreamVoice';
+const description = 'The page you requested could not be found.';
+const url = 'https://dreamvoice.coderluii.dev/404';
+const ogImage = 'https://dreamvoice.coderluii.dev/promo/dreamvoice/dreamvoice-og.png';
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content={description} />
+  <meta name="author" content="CoderLuii" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={url} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@CoderLuii" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <title>{title}</title>
+</head>
+
+<body class="min-h-screen font-sans antialiased">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-[#3B82F6] focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold">Skip to content</a>
+
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#050505]/80 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="/" class="flex items-center gap-3 text-lg font-bold">
+        <img src="/promo/dreamvoice/logo.png" alt="DreamVoice" width="32" height="32" class="rounded-full" />
+        <span class="bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] bg-clip-text text-transparent">DreamVoice</span>
+      </a>
+      <a href="https://coderluii.dev" class="rounded-lg border border-white/10 px-3 py-1.5 text-sm text-[#a1a1aa] transition-colors hover:border-[#3B82F6]/50 hover:text-white">Back to CoderLuii</a>
+    </div>
+  </nav>
+
+  <main id="main-content" class="relative flex min-h-screen items-center justify-center overflow-hidden px-4 pt-24 pb-16 sm:px-6">
+    <div class="gradient-mesh" aria-hidden="true"></div>
+    <section class="w-full max-w-2xl rounded-3xl border border-white/10 bg-[#0E0E14]/85 p-8 text-center shadow-2xl shadow-black/20 sm:p-12">
+      <div class="mx-auto mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-[#3B82F6]/30 bg-[#3B82F6]/10 text-2xl font-bold text-[#3B82F6]">
+        404
+      </div>
+      <p class="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#3B82F6]">Page not found</p>
+      <h1 class="mb-4 text-3xl font-bold text-white sm:text-5xl">That route doesn’t exist.</h1>
+      <p class="mx-auto mb-8 max-w-xl text-base leading-7 text-[#a1a1aa] sm:text-lg">
+        The page may have moved, the link may be outdated, or the URL may be wrong.
+        Head back to the DreamVoice homepage and join the waitlist from there.
+      </p>
+
+      <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href="/" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
+          Return to homepage
+        </a>
+        <a href="https://coderluii.dev" class="inline-flex items-center justify-center rounded-xl border border-white/10 px-6 py-3 text-sm font-semibold text-[#a1a1aa] transition-colors hover:border-[#3B82F6]/50 hover:text-white">
+          Visit CoderLuii
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
